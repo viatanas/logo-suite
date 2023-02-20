@@ -1,0 +1,6 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M185 60H260V135H185V60Z" fill="black"/>
+<path d="M60 185H135V260H60V185Z" fill="black"/>
+<path d="M60 60H163.261V106.739C163.261 135.554 139.902 158.913 111.087 158.913H60V60Z" fill="black"/>
+<path d="M260 260H156.739V213.261C156.739 184.446 180.098 161.087 208.913 161.087H260V260Z" fill="black"/>
+</svg>
