@@ -60,7 +60,7 @@ export default function Home() {
               Free <span className="italic font-semibold">logos</span> for your
               next project
             </h1>
-            <p className="w-10/12 text-lg lg:w-full font-noraml mt-7 font-inter text-neutral-800">
+            <p className="w-10/12 text-lg lg:w-full lg:text-center font-noraml mt-7 font-inter text-neutral-800">
               Subscribe to receive new logos in your inbox every week.
             </p>
             <div className="flex items-center space-x-5 mt-7">
@@ -77,18 +77,18 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="flex flex-col w-full mt-20 lg:mt-60">
+        <section className="flex flex-col w-full mt-20 lg:mt-44">
           <div className="w-full max-w-6xl mx-auto">
             <div className="flex w-full space-x-2">
-              <span className="text-base font-normal text-black lg:text-lg font-inter">
+              <span className="text-base font-normal text-black font-inter">
                 Logos
               </span>
-              <span className="text-base font-bold text-black lg:text-lg font-inter">
+              <span className="text-base font-bold text-black font-inter">
                 100
               </span>
             </div>
 
-            <div className="grid w-full grid-cols-1 gap-px mt-8 border lg:grid-cols-3 bg-neutral-200 border-neutral-200">
+            <div className="grid w-full grid-cols-1 gap-px mt-6 border lg:grid-cols-3 bg-neutral-200 border-neutral-200">
               {logos.map((logo) => (
                 <LogoBox
                   imageUrl={logo.url}
