@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <main className="w-full h-auto px-5 pb-40 lg:px-0">
         <nav className="w-full h-auto">
-          <div className="flex items-center justify-between w-full h-auto py-12 mx-auto max-w-7xl">
+          <div className="flex items-center justify-between w-full h-auto max-w-6xl py-12 mx-auto">
             <Link href="/">
               <img src="/img/logos/shapes-logo.svg" />
             </Link>
