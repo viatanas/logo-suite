@@ -88,15 +88,15 @@ export default function Home() {
         isOpen={subscriptionDialog}
         closeDialog={closeSubscriptionDialog}
       />
-      <main className="w-full h-auto px-5 pb-20 lg:px-0">
+      <main className="w-full h-auto px-8 pb-20 lg:px-0">
         <nav className="w-full h-auto">
-          <div className="flex items-center justify-between w-full h-auto max-w-6xl py-12 mx-auto">
+          <div className="flex items-center justify-between w-full h-auto max-w-6xl py-6 mx-auto">
             <Link href="/">
               <img src="/img/logos/shapes-logo.svg" />
             </Link>
             <div className="flex items-center space-x-2">
               <span className="text-sm font-normal font-inter text-neutral-900">
-                by
+                a side project by
               </span>
               <a
                 target="_blank"
