@@ -41,13 +41,41 @@ const SubscriptionDialog = ({ isOpen, closeDialog }) => {
                 collection every month.
               </p>
               <div className="flex w-full space-x-2 mt-7">
-                <input
-                  placeholder="Enter your email"
-                  className="w-full h-8 px-4 text-sm font-normal border rounded-full outline-none bg-neutral-50 border-neutral-200 font-inter text-neutral-900 focus:border-neutral-900"
-                />
-                <button className="flex items-center h-8 px-5 text-sm font-normal text-white rounded-full bg-neutral-900 font-inter hover:opacity-80">
-                  Subscribe
-                </button>
+                <form
+                  action="https://simplesuite.us21.list-manage.com/subscribe/post?u=d6bf48bd4682496369ae5f4fd&amp;id=96a65bada6&amp;f_id=00ea89e1f0"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  className="w-full "
+                  target="_blank"
+                  noValidate
+                >
+                  <div
+                    id="mc_embed_signup_scroll"
+                    className="flex flex-col items-center w-full space-y-3 lg:space-x-2 lg:w-auto lg:space-y-0 lg:flex-row "
+                  >
+                    <div className="w-full mc-field-group">
+                      <input
+                        type="email"
+                        name="EMAIL"
+                        placeholder="Enter your email"
+                        className="w-full h-10 px-4 text-sm font-normal border rounded-full outline-none lg:h-8 bg-neutral-50 border-neutral-200 font-inter text-neutral-900 focus:border-neutral-900"
+                        id="mce-EMAIL"
+                      />
+                    </div>
+                    <div className="w-full lg:w-auto clear">
+                      <button
+                        type="submit"
+                        value="Subscribe"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        className="flex items-center justify-center w-full h-10 px-5 text-sm font-normal text-white rounded-full lg:h-8 lg:justify-start lg:w-auto bg-neutral-900 font-inter hover:opacity-80"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </motion.div>

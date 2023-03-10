@@ -19,7 +19,7 @@ const License = () => {
     <div>
       <Head>
         {/* HTML Meta Tags */}
-        <title>Logo Suite - Free to use logos for your next project</title>
+        <title>LogoSuite - Free to use logos for your next project</title>
         <meta
           name="description"
           content="LogoSuite is a collection of 75+ free-to-use logos, each professionally designed by Simple Suite, with 25 new logos added to the collection every month."
