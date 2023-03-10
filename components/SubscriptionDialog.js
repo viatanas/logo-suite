@@ -27,12 +27,12 @@ const SubscriptionDialog = ({ isOpen, closeDialog }) => {
             <div className="w-full overflow-hidden">
               <img
                 src="/img/dialog-image.png"
-                className="h-[140px] -ml-32  max-w-none"
+                className="h-[100px] lg:h-[140px] -ml-20 lg:-ml-32  max-w-none"
               />
             </div>
             <div className="flex flex-col items-center w-full p-10">
               <img src="/img/logos/shapes-logo.svg" className="h-11" />
-              <h1 className="w-10/12 mt-6 text-3xl font-light tracking-tight text-center font-garamond text-neutral-900">
+              <h1 className="w-full mt-6 text-3xl font-light tracking-tight text-center lg:w-10/12 font-garamond text-neutral-900">
                 Receive new <span className="italic font-bold">logos</span> in
                 your inbox every month.
               </h1>
