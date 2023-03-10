@@ -47,7 +47,7 @@ const SubscriptionDialog = ({ isOpen, closeDialog }) => {
                   id="mc-embedded-subscribe-form"
                   name="mc-embedded-subscribe-form"
                   className="w-full "
-                  target="_blank"
+                  target="_self"
                   noValidate
                 >
                   <div
