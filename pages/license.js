@@ -61,7 +61,7 @@ const License = () => {
               <img src="/img/logos/shapes-logo.svg" />
             </Link>
             <div className="flex items-center space-x-2">
-              <span className="text-sm font-normal font-inter text-neutral-900">
+              <span className="text-xs font-normal lowercase font-inter text-neutral-500">
                 a side project by
               </span>
               <a
