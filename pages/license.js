@@ -1,11 +1,59 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import SubscriptionDialog from "@/components/SubscriptionDialog";
 
 const License = () => {
+  const [subscriptionDialog, setSubscriptionDialog] = useState(false);
+
+  const openSubscriptionDialog = () => {
+    setSubscriptionDialog(true);
+  };
+
+  const closeSubscriptionDialog = () => {
+    setSubscriptionDialog(false);
+  };
+
   return (
     <div>
-      <Head></Head>
+      <Head>
+        {/* HTML Meta Tags */}
+        <title>Logo Suite - Free to use logos for your next project</title>
+        <meta
+          name="description"
+          content="LogoSuite is a collection of 75+ free-to-use logos, each professionally designed by Simple Suite, with 25 new logos added to the collection every month."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Facebook Meta Tags */}
+        <meta name="og:url" content="https://logosuite.co/" />
+        <meta name="og:type" content="website" />
+        <meta
+          name="og:title"
+          content="Logo Suite - Free to use logos for your next project"
+        />
+        <meta
+          name="og:description"
+          content="LogoSuite is a collection of 75+ free-to-use logos, each professionally designed by Simple Suite, with 25 new logos added to the collection every month."
+        />
+        <meta name="og:image" content="/og.png" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:domain" content="logosuite.co" />
+        <meta name="twitter:url" content="https://logosuite.co" />
+        <meta
+          name="twitter:title"
+          content="Logo Suite - Free to use logos for your next project"
+        />
+        <meta
+          name="twitter:description"
+          content="LogoSuite is a collection of 75+ free-to-use logos, each professionally designed by Simple Suite, with 25 new logos added to the collection every month."
+        />
+        <meta name="twitter:image:src" content="/og.png" />
+      </Head>
       <main>
         <nav className="w-full h-auto">
           <div className="flex items-center justify-between w-full h-auto max-w-6xl py-12 mx-auto">
@@ -26,7 +74,10 @@ const License = () => {
             </div>
           </div>
         </nav>
-
+        <SubscriptionDialog
+          isOpen={subscriptionDialog}
+          closeDialog={closeSubscriptionDialog}
+        />
         <article className="w-full h-auto">
           <div className="flex flex-col w-full max-w-lg py-20 mx-auto">
             <h1 className="text-5xl font-normal font-garamond text-neutral-900">
@@ -137,7 +188,10 @@ const License = () => {
                 </span>
                 <ArrowUpRightIcon className="w-3 h-3 text-black transition duration-100 transform group-hover:-translate-y-1 group-hover:translate-x-1" />
               </Link>
-              <button className="flex items-center h-8 px-5 text-base font-normal text-white bg-black rounded-full w-max font-inter hover:opacity-80">
+              <button
+                onClick={() => openSubscriptionDialog()}
+                className="flex items-center h-8 px-5 text-base font-normal text-white bg-black rounded-full w-max font-inter hover:opacity-80"
+              >
                 Subscribe
               </button>
             </div>
